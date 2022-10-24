@@ -10,5 +10,9 @@ function startTime(){
     function checkTime(i)
     {if (i<12) {i="0" + i;}return i;}
     window.onload=function(){startTime();}
-
-    
+    // Creamos array con los meses del año
+const meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+// Creamos array con los días del año
+const dias_semana = ['Domingo', 'Lunes', 'martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
+const fecha = new Date();
+// Construimos el formato de salida esta escrito en html

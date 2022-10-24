@@ -17,6 +17,9 @@ header{
      background-color: rgb(10, 100, 10);
      width:100vw;
 }
+.colorear{
+    background-color: green;
+}
 
 .logo{
     display: none;
@@ -100,9 +103,19 @@ ul.navigation li:hover {
 
 
 /* aca estan los estilos de la pagina principal */
+.principal{
+    display:inline-block;
+    flex-direction: column;
+    text-align: center;
+    width: 600px;
+}
 
-
-
+.article{
+    display: grid;
+    margin: 20px;
+   justify-content: center;
+  
+}
 
 
 
@@ -207,23 +220,27 @@ textarea{
     border-radius: 6px;
   }
 
+    
+
 /*  ESTILOS DE LA PAGINA DE DEPORTES, PRINCIPAL, SOCIALES*/
 
-.deportes,.principal,.sociales{
+.deportes,.sociales{
     display: flex;
     flex-direction: column;
     text-align: center;
+    width: 550px;
 }
 
-/*.deportes*/ article img,aside img{
+/*.deportes*/ article img{
     width:70vw;
     height:50vh;
     border-radius: 10px;
     border: 2px solid black;
     margin-top: 10px;
+    
      
 }
-/*.deportes*/ article p,aside p{
+/*.deportes*/ article p{
     width: 70vw;
     text-align: justify;
     padding: 15px;
@@ -243,20 +260,12 @@ h2,h3{
 .deportes table{
     background: rgba(0, 50, 0, 0.3);
     margin: auto;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 10px;
     width:80%;
 
 }
-
-
-
-
-
-/*aca estan los estilos del footer */
-
-
-
+ /*aca estan los estilos del footer */
 footer{
     background-color: rgb(10, 100, 10);
     text-align: center;
@@ -278,6 +287,13 @@ footer span img{
        display: none;
     }
    
+    .principal{
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        width: 1000px; ;
+    }
+    
 
    /* cambiamos la direccion del flex */
     ul.navigation {
@@ -325,9 +341,8 @@ footer span img{
     .deportes, .principal,.sociales{
         flex-direction: row;
         margin-bottom: 10px;
-        
-    {
-
+        width: 1005px;
+    
     }
     }
     /*.deportes*/ article,aside{
@@ -335,27 +350,17 @@ footer span img{
         height: 100%;
     }
     /*.deportes*/ article img{
-        width:50%;
-        height:30%;
-        margin: auto;
-    } 
-    /*.deportes*/ aside img{
-        width:70%;
+        width:80%;
         height:30%;
         margin: auto;
     }
-    #divcarusel{
-        margin-top: 50px;
-    }
-
+  
     /*.deportes*/ article{
         width: 70%;
 
     } 
-    /*.deportes*/ aside{
-        width: 30%;
-    } 
-    /*.deportes*/ article p,aside p{
+    
+    /*.deportes*/ article p{
         width: 80%;
         margin: auto;
     }
@@ -363,6 +368,98 @@ footer span img{
         width:80%;
         
     } 
+    .cont_dinamica thead th{
+        background-color: rgb(0,50,0);
+        border-radius:10px;
+        border:solid rgb(0,50,0);
+      }
+      .cont_dinamica table{
+        background: rgba(0, 35, 0, 0.5);
+        margin: auto;
+        margin-top:10px;
+        margin-bottom:10px;
+        width:80%;
+        border-radius: 10px;
+        text-align: center;
+        color:white;
+        font-size:15px ;
+        border:3px solid rgb(0,50,0);
+      
+      }
+      .cont_dinamica{
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+       align-items: flex-start;
+       
+      
+      }
+      button{
+        
+        padding:5px;
+        font-size: 10px;
+        background-color: rgb(0,50,0);
+        color:white;
+        border-radius: 10px;
+        justify-content: space-around;
+        
+      }
+      .botonera{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+      }
 
+/*.formulario*/form {
+    width:90%;
+    margin: auto;
+    background: rgba(0, 35, 0, 0.5);
+    padding: 20px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 3px solid rgb(0,50,0);
+}
+/*.formulario*/form h2{
+    color: white; 
+    text-align: center;
+    margin: 0;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-shadow:  0.1em 0.1em 0.2em black;
+}
+
+/*.formulario*/ input,textarea{
+    background-color: rgb(0,50,0);
+    color:white; 
+    width:100%;
+    margin-bottom: 2px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius:10px ;
+    font-size: 20px;
+    text-align: center;
+}
+textarea{
+    min-height: 100px;
+    max-height: 300px;
+    max-width: 100%;
+    min-width: 100%;
 
 }
+.formulario button{
+    color:white;
+    width:100%;
+    border-radius:10px;
+    background-color: rgb(0,25,0);
+    padding:20px ;
+    margin-bottom:4px ;
+    font-size:25px;
+    
+}
+.formulario button:hover{
+    cursor: pointer;
+}
+
+
